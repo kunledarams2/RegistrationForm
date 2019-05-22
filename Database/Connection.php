@@ -1,8 +1,17 @@
 
 
 <?php
+
+$DBconfig = require 'Config/DBconfig.php';
 try{
-    $pdo =new PDO("local:host=127.0.0.1;dbname=Registration","root","kunle");
+
+    $pdo=new PDO(
+        $DBconfig["DBhost"]. ";".$DBconfig["DBname"],
+        $DBconfig["DBusername"],
+        $DBconfig["DBpassword"],
+        $DBconfig["Erroroption"]
+
+    );
 }catch(PDOException $e){
     die($e->getMessage());
 }
