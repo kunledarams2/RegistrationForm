@@ -4,8 +4,8 @@
 
 return [
     "Database"=>[
-        "DBname"=>"Registration",
-        "DBhost"=> "local:host=127.0.0.1",
+        "DBname"=>"Registrtion",
+        "DBhost"=> "mysql:host=127.0.0.1",
         "DBusername"=> "root",
         "DBpassword"=>"kunle",
         "Erroroption"=>[
@@ -14,3 +14,5 @@ return [
      ]
    
     ];
+
+    
