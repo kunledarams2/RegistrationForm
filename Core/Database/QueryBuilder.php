@@ -3,15 +3,16 @@
 
 class QueryBuider{
 
-    var $pdo;
+    public $pdo;
 
     function __construct($pdo)
     {
         $this->pdo=$pdo;
     }
     
+    
 
-    function selectAll( $tableName){
+    function selectAll($tableName){
 
         $statement= $this->pdo->prepare("select * from {$tableName}");
          $statement->execute();

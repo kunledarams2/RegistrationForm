@@ -13,7 +13,7 @@
     <div class="body-content">
         <div class="module">
           <h1>Course Registration</h1>
-          <form class="form" action="Reg.php" method="post" autocomplete="off">
+          <form class="form" action="Addstudent.php" method="post" autocomplete="off">
             <div class="alert alert-error"></div>
             <input type="text" placeholder="Last Name" name="lastname" required />
             <input type="text" placeholder="Fist Name" name="firstname" required />

@@ -4,9 +4,9 @@
 session_start();
 
 
-require 'Core/Database/QueryBuilder.php';
-require 'Core/Database/Connection.php';
- $config= require 'Config/DBconfig.php';
+require '../Core/Database/QueryBuilder.php';
+require '../Core/Database/Connection.php';
+ $config= require '../Config/DBconfig.php';
 
 $pdo = DBconnection::DB_Config($config['Database']);
 
